@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanic - Harley SVC AI</title>
+  <style>
+    body { margin: 0; font-family: system-ui; background: #111; color: #eee; }
+    #canvas { border: 1px solid #333; background: #222; }
+    .controls { position: absolute; top: 10px; left: 10px; z-index: 10; }
+    button { padding: 8px 16px; margin: 4px; background: #444; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    #status { position: absolute; bottom: 10px; left: 10px; }
+    #upload { margin: 10px; }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <input type="file" id="upload" accept=".pdf">
+    <input type="password" id="apikey" placeholder="OpenAI API Key" style="width:220px">
+    <button id="speak">🎤 Speak Query</button>
+    <button id="clear">Clear Canvas</button>
+  </div>
+  <canvas id="canvas" width="2000" height="2000"></canvas>
+  <div id="status">Ready. Upload PDF and speak your query about the manual.</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

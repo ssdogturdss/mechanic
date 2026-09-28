@@ -1,0 +1,24 @@
+{
+  "name": "mechanic-harley-svc",
+  "version": "1.0.0",
+  "description": "Production-ready Harley service manual AI assistant with infinite canvas and voice",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "install": "npm install",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.0.379",
+    "openai": "^4.52.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "@types/node": "^20.12.12"
+  }
+}
